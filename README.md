@@ -23,13 +23,13 @@ Este é um sistema de identificação de moedas desenvolvido em Python utilizand
 1. Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/EricSantosdm/ContadorDeMoedasML.git
+git clone https://github.com/ClassNeuralNetwork/Reconhecimento_de_Moedas.git
 ```
 
 2. Navegue até o diretório do projeto:
 
 ```bash
-cd ContadorDeMoedasML
+cd Reconhecimento_de_Moedas
 ```
 
 3. Instale as dependências usando pip:
@@ -56,6 +56,51 @@ python main.py
 
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, por favor, abra uma issue para discutir as mudanças propostas ou envie um pull request.
 ## Equipe
+<table align="center">
+  <tr>    
+    <td align="center">
+      <a href="https://github.com/brunowellington">
+        <img src="https://avatars.githubusercontent.com/u/83995825?v=4" 
+        width="120px;"  alt="Foto de Bruno Wellington no GitHub"/><br>
+        <sub>
+          <b>Bruno Wellington</b>
+         </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/EricSantosdm">
+        <img src="https://avatars.githubusercontent.com/u/33100571?v=4" 
+        width="120px;" alt="Foto de Eric Santos no GitHub"/><br>
+        <sub>
+          <b>Eric Santos</b>
+         </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DanielFernandess">
+        <img src="https://avatars.githubusercontent.com/u/80116546?v=4" 
+        width="120px;" alt="Foto de Daniel Fernandes no GitHub"/><br>
+        <sub>
+          <b>Daniel Fernandes</b>
+         </sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/wellespaiva-dev">
+        <img src="https://avatars.githubusercontent.com/u/69151464?v=4" 
+        width="120px;" alt="Foto de Welles Paiva no GitHub"/><br>
+        <sub>
+          <b>Welles Paiva</b>
+         </sub>
+      </a>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+Cada contribuidor desempenhou um papel essencial no desenvolvimento e aprimoramento deste projeto.
+</p>
+
 
 
 ## Licença
@@ -65,4 +110,3 @@ Este projeto está licenciado sob a [Licença MIT](https://opensource.org/licens
 ## Agradecimentos
 
 Agradecemos aos desenvolvedores e à comunidade de código aberto que contribuíram com ferramentas como OpenCV e scikit-learn, que tornaram possível o desenvolvimento deste sistema de identificação de moedas.
-```
