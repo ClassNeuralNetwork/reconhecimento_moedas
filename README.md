@@ -1,5 +1,7 @@
 # Sistema de Reconhecimento e Contagem de Moedas com OpenCV
 
+Projeto da Disciplina de Topicos especiais de engenharia de software(Redes Neurais) - 2023.2
+
 Este é um sistema de identificação de moedas desenvolvido em Python utilizando OpenCV. O sistema utiliza técnicas de Processamento de Imagem e Machine Learning para identificar diferentes tipos de moedas em uma imagem.
 
 ## Funcionalidades Principais
@@ -53,6 +55,8 @@ python main.py
 ## Contribuição
 
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, por favor, abra uma issue para discutir as mudanças propostas ou envie um pull request.
+## Equipe
+
 
 ## Licença
 
