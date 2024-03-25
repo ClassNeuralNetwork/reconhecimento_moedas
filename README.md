@@ -1,2 +1,2 @@
-# ClReconhecimento_de_Moedas
-Reconhecimetos de moedas brasileiras usando machine learning
+# Reconhecimento de Moedas brasileiras com machine learninh e visão computacional com OpenCV
+
