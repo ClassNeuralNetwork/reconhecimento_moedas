@@ -1,6 +1,14 @@
-# Sistema de Reconhecimento e Contagem de Moedas com OpenCV
+# Sistema de Reconhecimento e Contagem de Moedas
 
-Projeto da Disciplina de Topicos especiais de engenharia de software(Redes Neurais) - 2023.2
+---
+#### Projeto da Disciplina PET1706 - TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE (Redes Neurais Artificiais) - 2023.2 
+###### Professora: [Rosana Rego](https://github.com/roscibely)
+<div>
+  <img src="https://raw.githubusercontent.com/roscibely/algorithms-and-data-structure/main/root/ufersa.jpg" width="700" height="250">
+</div>
+<i> <a href="https://engsoftwarepaudosferros.ufersa.edu.br/apresentacao/"> Curso Bacharel em Engenharia de Software  </a> - UFERSA - Campus Pau dos Ferros </a></i>
+
+---
 
 Este é um sistema de identificação de moedas desenvolvido em Python utilizando OpenCV. O sistema utiliza técnicas de Processamento de Imagem e Machine Learning para identificar diferentes tipos de moedas em uma imagem.
 
