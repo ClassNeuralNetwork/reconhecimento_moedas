@@ -1,14 +1,4 @@
-# Sistema de Reconhecimento e Contagem de Moedas
-
----
-#### Projeto da Disciplina PET1706 - TÓPICOS ESPECIAIS EM ENGENHARIA DE SOFTWARE (Redes Neurais Artificiais) - 2023.2 
-###### Professora: [Rosana Rego](https://github.com/roscibely)
-<div>
-  <img src="https://raw.githubusercontent.com/roscibely/algorithms-and-data-structure/main/root/ufersa.jpg" width="700" height="250">
-</div>
-<i> <a href="https://engsoftwarepaudosferros.ufersa.edu.br/apresentacao/"> Curso Bacharel em Engenharia de Software  </a> - UFERSA - Campus Pau dos Ferros </a></i>
-
----
+# Sistema de Reconhecimento e Contagem de Moedas com OpenCV
 
 Este é um sistema de identificação de moedas desenvolvido em Python utilizando OpenCV. O sistema utiliza técnicas de Processamento de Imagem e Machine Learning para identificar diferentes tipos de moedas em uma imagem.
 
@@ -31,16 +21,16 @@ Este é um sistema de identificação de moedas desenvolvido em Python utilizand
 1. Clone o repositório do GitHub:
 
 ```bash
-git clone https://github.com/ClassNeuralNetwork/Reconhecimento_de_Moedas.git
+git clone https://github.com/brunowellington/ContadorDeMoedasBrasileirasComOpenCV.git
 ```
 
 2. Navegue até o diretório do projeto:
 
 ```bash
-cd Reconhecimento_de_Moedas
+cd ContadorDeMoedasBrasileirasComOpenCV
 ```
 
-3. Instale as dependências usando pip:
+3. Instale antes um ambiente virtual e inicie, depois instale as dependências usando pip:
 
 ```bash
 pip install -r requirements.txt
@@ -48,68 +38,37 @@ pip install -r requirements.txt
 
 ## Uso
 
-1. Execute o script principal do sistema:
+1. Execute o script principal do sistema para criar as pastas de treino e validção a partir do dataset:
 
 ```bash
 python main.py
 ```
 
-2. Carregue uma imagem contendo moedas que deseja analisar.
+2. Treine o modelo a partir do arquivo 'main.ipynb'
 
-3. Aguarde o processamento. O sistema identificará as moedas presentes na imagem e exibirá os resultados.
+Caso queira analisar diretamente do modelo, faça:
 
-4. Você também pode explorar outras funcionalidades disponíveis na interface, como visualizar as regiões de interesse identificadas nas moedas.
+2.1. Carregue uma imagem contendo moedas que deseja analisar.
+
+2.2. Aguarde o processamento. O sistema identificará as moedas presentes na imagem e exibirá os resultados.
+
+3. Caso queira testar usando o openCv execute o script
+
+```bash
+python reconhecimento&contagem.py
+```
+
+4. Caso queira executar pelo StreamLit execute o script no caminho APP
+
+```bash
+streamlit run Appstreamlit.py
+```
+
+5. Você também pode explorar outras funcionalidades disponíveis na interface, como visualizar as regiões de interesse identificadas nas moedas.
 
 ## Contribuição
 
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, por favor, abra uma issue para discutir as mudanças propostas ou envie um pull request.
-## Equipe
-<table align="center">
-  <tr>    
-    <td align="center">
-      <a href="https://github.com/brunowellington">
-        <img src="https://avatars.githubusercontent.com/u/83995825?v=4" 
-        width="120px;"  alt="Foto de Bruno Wellington no GitHub"/><br>
-        <sub>
-          <b>Bruno Wellington</b>
-         </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/EricSantosdm">
-        <img src="https://avatars.githubusercontent.com/u/33100571?v=4" 
-        width="120px;" alt="Foto de Eric Santos no GitHub"/><br>
-        <sub>
-          <b>Eric Santos</b>
-         </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/DanielFernandess">
-        <img src="https://avatars.githubusercontent.com/u/80116546?v=4" 
-        width="120px;" alt="Foto de Daniel Fernandes no GitHub"/><br>
-        <sub>
-          <b>Daniel Fernandes</b>
-         </sub>
-      </a>
-    </td>
-    <td align="center">
-      <a href="https://github.com/wellespaiva-dev">
-        <img src="https://avatars.githubusercontent.com/u/69151464?v=4" 
-        width="120px;" alt="Foto de Welles Paiva no GitHub"/><br>
-        <sub>
-          <b>Welles Paiva</b>
-         </sub>
-      </a>
-    </td>
-  </tr>
-</table>
-
-<p align="center">
-Cada contribuidor desempenhou um papel essencial no desenvolvimento e aprimoramento deste projeto.
-</p>
-
-
 
 ## Licença
 
