@@ -17,8 +17,6 @@ coin_values = {
 # Carregar o modelo treinado para reconhecimento de moedas
 coin_classifier = load_model("../modelo/mode_acurracy89.h5")
 
-RTC_CONFIGURATION = RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]})
-
 class CoinRecognition(VideoTransformerBase):
     def __init__(self):
         self.frame_count = 0
