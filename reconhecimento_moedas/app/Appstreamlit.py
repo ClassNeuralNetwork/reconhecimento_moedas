@@ -17,13 +17,11 @@ coin_values = {
 # Carregar o modelo treinado para reconhecimento de moedas
 coin_classifier = load_model("../modelo/mode_acurracy89.h5")
 
-RTC_CONFIGURATION = RTCConfiguration({"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]})
-
 class CoinRecognition(VideoTransformerBase):
     def __init__(self):
         self.frame_count = 0
 
-    def recv(self, frame):
+    def transform(self, frame):
         img = frame.to_ndarray(format="bgr24")
         coins_count = {"1 real": 0, "50 centavos": 0, "25 centavos": 0, "10 centavos": 0, "5 centavos": 0}
 
@@ -92,7 +90,7 @@ def main():
     elif choice == "Reconhecimento de Moedas pelo CV2":
         st.header("Ativar câmera")
         st.write("Clique em 'Select Device' para selecionar a WebCam de sua preferência depois clique em selecionar 'Start' para ativar o reconhecimento de moedas")
-        webrtc_ctx = webrtc_streamer(key="coin-recognition", mode=WebRtcMode.SENDRECV, rtc_configuration=RTC_CONFIGURATION, video_processor_factory=CoinRecognition)
+        webrtc_streamer(key="coin-recognition", video_processor_factory=CoinRecognition)
 
     elif choice == "Resultados":
         st.subheader("Resultados do Reconhecimento de Moedas")
