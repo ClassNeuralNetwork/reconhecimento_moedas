@@ -55,9 +55,13 @@ class CoinRecognition(VideoTransformerBase):
                 cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 2)
                 cv2.putText(img, coin_class, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
-        # Exibir contagem de moedas
+        total_value = 0
+    
         for coin, count in coins_count.items():
-            st.write(f"{coin}: {count}")
+            total_value += count * coin_values[coin]
+        
+        # exibindo dinheiro total
+        cv2.putText(img, f"Total: R$ {total_value:.2f}", (10, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2)
 
         return img
 
