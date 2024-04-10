@@ -16,7 +16,7 @@ coin_values = {
 
 # Carregar o modelo treinado para reconhecimento de moedas
 
-coin_classifier = load_model("../reconhecimento_moedas/modelo/mode_acurracy89.h5")
+coin_classifier = load_model("..\reconhecimento_moedas\modelo\mode_acurracy89.h5")
 
 class CoinRecognition(VideoTransformerBase):
     def __init__(self):
