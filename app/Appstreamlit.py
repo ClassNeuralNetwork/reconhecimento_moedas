@@ -16,7 +16,7 @@ coin_values = {
 
 # Carregar o modelo treinado para reconhecimento de moedas
 
-coin_classifier = load_model("reconhecimento_moedas/modelo/mode_acurracy89.h5")
+coin_classifier = load_model("../reconhecimento_moedas/modelo/mode_acurracy89.h5")
 
 class CoinRecognition(VideoTransformerBase):
     def __init__(self):
@@ -81,7 +81,7 @@ def classify_coin(coin_roi, coin_classifier):
 
 def main():
     st.write('<span style="font-size:40px;"><b>Reconhecimento e Contagem de Moedas Utilizando o OpenCV.</span>', unsafe_allow_html=True)
-    activities = ["Início", "Reconhecimento de Moedas pelo CV2", "Resultados"]
+    activities = ["Início", "Reconhecimento de Moedas pelo CV2"]
     choice = st.sidebar.selectbox("Selecione", activities)
     if choice == "Início":
         st.write("**Projeto desenvolvido na disciplina de Redes Neurais - Curso Engenharia de Software - UFERSA - 2023.2**")
