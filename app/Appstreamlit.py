@@ -97,10 +97,6 @@ def main():
         st.write("Clique em 'Select Device' para selecionar a WebCam de sua preferência depois clique em selecionar 'Start' para ativar o reconhecimento de moedas")
         webrtc_streamer(key="coin-recognition", video_processor_factory=CoinRecognition)
 
-    elif choice == "Resultados":
-        st.subheader("Resultados do Reconhecimento de Moedas")
-        # Adicione qualquer conteúdo adicional relacionado aos resultados aqui
-
     else:
         pass
 
