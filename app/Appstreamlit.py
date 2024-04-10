@@ -14,9 +14,12 @@ coin_values = {
     "5 centavos": 0.05
 }
 
+# Construir o caminho do modelo de forma dinâmica
+current_directory = os.path.dirname(os.path.abspath(__file__))
+model_path = os.path.join(current_directory, "modelo", "mode_acurracy89.h5")
+
 # Carregar o modelo treinado para reconhecimento de moedas
-path = '\reconhecimento_moedas\modelo\mode_acurracy89.h5' 
-coin_classifier = load_model(path)
+coin_classifier = load_model(model_path)
 
 class CoinRecognition(VideoTransformerBase):
     def __init__(self):
