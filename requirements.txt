@@ -8,5 +8,5 @@ opencv-contrib-python-headless
 mediapipe
 streamlit_webrtc
 tensorflow-cpu
-keras~=2.12.0
+keras~=2.15.0
 tensorflow==2.15.0
