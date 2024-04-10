@@ -1,10 +1,10 @@
+import os
 import cv2
 import streamlit as st
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, WebRtcMode
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing.image import img_to_array
 import numpy as np
-
 # Dicionário de valores das moedas
 coin_values = {
     "1 real": 1.00,
