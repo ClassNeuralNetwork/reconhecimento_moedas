@@ -4,11 +4,11 @@ from keras.models import load_model
 
 # Dicionário de valores das moedas
 coin_values = {
-    "1 real": 1.00,
-    "50 centavos": 0.50,
-    "25 centavos": 0.25,
+    "5 centavos": 0.05,
     "10 centavos": 0.10,
-    "5 centavos": 0.05
+    "25 centavos": 0.25,
+    "50 centavos": 0.50,
+    "1 real": 1.00
 }
 
 # Função para detecção e contagem de moedas em um frame de vídeo
@@ -70,13 +70,13 @@ def classify_coin(coin_roi, coin_classifier):
     predicted_class_index = np.argmax(predictions)
     
     # Mapeia o índice da classe prevista para a classe real
-    coin_classes = ["1 real", "50 centavos", "25 centavos", "10 centavos", "5 centavos"]
+    coin_classes = ["5 centavos", "10 centavos", "25 centavos", "50 centavos", "1 real"]
     predicted_coin_class = coin_classes[predicted_class_index]
     
     return predicted_coin_class
 
 # Carrega o modelo de classificação treinado
-coin_classifier = load_model("reconhecimento_moedas/modelo/mode_acurracy90TesteDia30as23hrs.h5")
+coin_classifier = load_model("../reconhecimento_moedas/modelo/mode_acurracy90TesteDia30as23hrs.h5")
 
 # Captura de vídeo da webcam
 video_capture = cv2.VideoCapture(1)
